@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流浪地球个人终端</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#team">制作团队</a></li>
+            <li><a href="#download">终端下载</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" data-depth="0.2">
+        <h1>流浪地球个人终端</h1>
+        <p>这是为流浪地球计划相关执行人员配备的便携式计算终端,内容包括集成通讯、导航、生命检测等核心功能,在2500年的漫长时间里，它是每位执行人员最可靠的伙伴</p>
+        <img src="assets/planet.svg" alt="星球">
+    </section>
+
+    <!-- 新增 section -->
+    <section id="countdown">
+        <h2>流浪地球计划实施还有</h2>
+        <p id="countdown-timer"></p>
+    </section>
+
+    <section id="team">
+        <h2>制作团队</h2>
+        <p>终端开发: 小不点大白
+        <p>网站开发: 宇梦
+        <p>网站完善：HU创作工作室
+        </p>
+    </section>
+
+    <section id="download">
+        <h2>个人终端下载</h2>
+        <div class="download-option">
+            <button id="windows-download">
+                <i class="fa-brands fa-windows"></i>
+                Windows （尚未推出）
+            </button>
+        </div>
+        <div class="download-option">
+            <button id="ios-download">
+                <i class="fa-brands fa-apple"></i>
+                iOS版 （尚未推出）
+            </button>
+        </div>
+        <div class="download-option">
+            <button id="android-download">
+                <i class="fa-brands fa-android"></i>
+                Android版
+            </button>
+            <!-- 添加遮罩层 -->
+            <div id="download-overlay">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©2075 流浪地球计划联合政府 此软件仅供学习 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
